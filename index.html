@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -7,19 +9,8 @@
   <meta name="description" content="احصل على بطاقة برصيد فوري عبر البنك العربي - قدم الآن بسهولة">
   <meta name="keywords" content="بطاقات البنك العربي, فيزا, ماستر كارد, رصيد فوري, تقديم طلب">
   <meta name="robots" content="index, follow">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="https://i.postimg.cc/QCbJhGHq/favicon.png" type="image/png">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6N6ZP09XL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K6N6ZP09XL');
-  </script>
 
   <!-- Meta Pixel -->
   <script>
@@ -39,7 +30,6 @@
     src="https://www.facebook.com/tr?id=1274887881317355&ev=PageView&noscript=1"/>
   </noscript>
 
-  <!-- CSS -->
   <style>
     body {
       font-family: 'Tajawal', sans-serif;
@@ -134,23 +124,21 @@
 
   <section class="cards-container">
 
-    <!-- بطاقة ماستر كارد -->
     <div class="card">
       <img src="https://i.postimg.cc/pXQnTp4W/2025-07-19-045618.png" alt="ماستر كارد">
       <h2>بطاقة ماستر كارد</h2>
       <p>رصيد مباشر: <strong>1000 شيكل</strong></p>
-      <a href="https://wa.me/96560312940" target="_blank" rel="noopener noreferrer" class="btn" onclick="fbq('track', 'Lead');">
+      <a href="https://wa.me/96560312940" class="btn">
         📝 تقديم طلب عبر واتساب
       </a>
       <p class="note">* التقديم مشروط بالموافقة حسب سياسة البنك</p>
     </div>
 
-    <!-- بطاقة فيزا -->
     <div class="card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="فيزا كارد">
       <h2>بطاقة فيزا</h2>
       <p>رصيد مباشر: <strong>1000 شيكل</strong></p>
-      <a href="https://wa.me/96560312940" target="_blank" rel="noopener noreferrer" class="btn" onclick="fbq('track', 'Lead');">
+      <a href="https://wa.me/96560312940" class="btn">
         📝 تقديم طلب عبر واتساب
       </a>
       <p class="note">* التقديم مشروط بالموافقة حسب سياسة البنك</p>
@@ -161,6 +149,20 @@
   <footer>
     <p>© 2025 البنك العربي - جميع الحقوق محفوظة</p>
   </footer>
+
+  <!-- التوجيه البرمجي الإجباري -->
+  <script>
+    document.querySelectorAll(".btn").forEach(function(button) {
+      button.addEventListener("click", function(e) {
+        e.preventDefault();
+        fbq('track', 'Lead');
+        const whatsappLink = this.getAttribute("href");
+        setTimeout(() => {
+          window.location.href = whatsappLink;
+        }, 300);
+      });
+    });
+  </script>
 
 </body>
 </html>

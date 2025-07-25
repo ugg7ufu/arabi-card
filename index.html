@@ -1,177 +1,117 @@
 
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>عروض بطاقات البنك العربي</title>
-  <meta name="description" content="احصل على بطاقة برصيد فوري عبر البنك العربي - قدم الآن بسهولة">
-  <meta name="keywords" content="بطاقات البنك العربي, فيزا, ماستر كارد, رصيد فوري, تقديم طلب">
-  <meta name="robots" content="index, follow">
-
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id=GTM-KS866RZS'+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KS866RZS');
-  </script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://i.postimg.cc/QCbJhGHq/favicon.png" type="image/png">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6N6ZP09XL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K6N6ZP09XL');
-  </script>
-
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1274887881317355');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1274887881317355&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Meta Pixel Code -->
-
   <style>
     body {
       font-family: 'Tajawal', sans-serif;
-      background: #f2f4f8;
+      background: #f5f5f5;
       margin: 0;
-      color: #333;
-      scroll-behavior: smooth;
+      padding: 0;
+      direction: rtl;
     }
     header {
-      background: linear-gradient(to left, #004481, #005c99);
+      background: linear-gradient(90deg, #004c97, #0066b3);
       color: white;
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    .cards-container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 40px 20px;
+    h1 { margin: 0; font-size: 2em; }
+    p { margin: 5px 0 0; }
+    .card-wrapper {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      gap: 20px;
+      padding: 30px;
     }
     .card {
       background: white;
-      border-radius: 16px;
-      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
       text-align: center;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s;
     }
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      transform: scale(1.03);
     }
     .card img {
-      width: 80px;
-      margin-bottom: 15px;
+      max-width: 100%;
+      height: 100px;
+      object-fit: contain;
     }
-    .card h2 {
-      color: #004481;
-      font-size: 22px;
-      margin-bottom: 10px;
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #004c97;
     }
     .card p {
-      font-size: 16px;
       color: #555;
+      margin: 5px 0 10px;
     }
     .btn {
       display: inline-block;
-      background: #00bfa5;
+      padding: 10px 20px;
+      background: #004c97;
       color: white;
-      padding: 12px 30px;
-      border-radius: 25px;
-      margin-top: 15px;
-      font-size: 16px;
+      border-radius: 8px;
       text-decoration: none;
-      transition: 0.3s ease;
-    }
-    .btn:hover {
-      background: #009e88;
-    }
-    .note {
-      font-size: 14px;
-      color: #777;
+      font-weight: bold;
       margin-top: 10px;
     }
-    footer {
-      background: #004481;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      margin-top: 40px;
+    .limited-offer {
+      background: #ffdd57;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS866RZS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
-  <header>
-    <h1>عروض بطاقات البنك العربي</h1>
-    <p>احصل على بطاقة فيزا أو ماستر كارد برصيد فوري الآن</p>
-  </header>
+<header>
+  <h1>بطاقات البنك العربي</h1>
+  <p>احصل على البطاقة المناسبة لك الآن</p>
+</header>
 
-  <section class="cards-container">
-    <div class="card">
-      <img src="https://i.postimg.cc/pXQnTp4W/2025-07-19-045618.png" alt="ماستر كارد">
-      <h2>بطاقة ماستر كارد</h2>
-      <p>رصيد مباشر: <strong>1000 شيكل</strong></p>
-      <a href="https://wa.me/96560312940" target="_blank" class="btn" onclick="fbq('track', 'Lead');">
-        📝 تقديم طلب عبر واتساب
-      </a>
-      <p class="note">* التقديم مشروط بالموافقة حسب سياسة البنك</p>
-    </div>
+<div class="card-wrapper">
 
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="فيزا كارد">
-      <h2>بطاقة فيزا</h2>
-      <p>رصيد مباشر: <strong>1000 شيكل</strong></p>
-      <a href="https://wa.me/96560312940" target="_blank" class="btn" onclick="fbq('track', 'Lead');">
-        📝 تقديم طلب عبر واتساب
-      </a>
-      <p class="note">* التقديم مشروط بالموافقة حسب سياسة البنك</p>
-    </div>
-  </section>
+  <div class="card">
+    <span class="limited-offer">🎁 أول سنة مجاناً</span>
+    <img src="https://i.imgur.com/7xO9VwX.png" alt="فيزا كلاسيك" />
+    <h3>فيزا كلاسيك</h3>
+    <p>بدون رسوم شهرية. استخدام محلي ودولي.</p>
+    <a href="https://wa.me/966500000000" class="btn">اطلبها الآن</a>
+  </div>
 
-  <footer>
-    <p>© 2025 البنك العربي - جميع الحقوق محفوظة</p>
-  </footer>
+  <div class="card">
+    <img src="https://i.imgur.com/lYuvkX0.png" alt="ماستر كارد ذهبية" />
+    <h3>ماستر كارد ذهبية</h3>
+    <p>رسوم 25 ريال/شهريًا. كاش باك حتى 2%.</p>
+    <a href="https://wa.me/966500000000" class="btn">اطلبها الآن</a>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/DGkf9of.png" alt="بطاقة بلاتينية" />
+    <h3>بطاقة بلاتينية</h3>
+    <p>حد ائتماني مرتفع. تأمين سفر مجاني.</p>
+    <a href="https://wa.me/966500000000" class="btn">اطلبها الآن</a>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/fxpyWNV.png" alt="بطاقة مسبقة الدفع" />
+    <h3>بطاقة مسبقة الدفع</h3>
+    <p>شحن فوري. بدون التزام شهري.</p>
+    <a href="https://wa.me/966500000000" class="btn">اطلبها الآن</a>
+  </div>
+
+</div>
+
 </body>
 </html>
